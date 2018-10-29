@@ -1,0 +1,28 @@
+@startuml
+start
+    :enter Login and Password;
+    if(Login and Password correct?) then (yes)
+        :Choose what you want to do;
+        split
+            :change Account Details;
+            split
+                :change Login;
+                :enter new Login;
+                stop
+            split again
+                :change Password;
+                :enter new Password;
+                stop
+            end split
+        split again
+            :check mail;
+            stop
+        split again
+            :write new mail;
+            :enter recipient's address;
+            :write mail;
+            stop
+        end split
+    else (false)
+        stop
+@enduml
