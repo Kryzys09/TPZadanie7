@@ -10,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        System.out.println("World Hello!");
         Account admin = new Account( "admin", "admin");
         System.out.println("Enter Login:");
         Scanner s = new Scanner(System.in);
